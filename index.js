@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');  //*fs for writeFile later
+const generateMarkdown = require('./utils/generateMarkdown.js')
 
 inquirer
 .prompt(questions)
@@ -46,13 +47,13 @@ const questions = [
           },
           {
             type: 'input',
-            message: 'what is the description of your application?',
-            name: 'description',
+            message: 'please enter your github username.',
+            name: 'username',
           },
           {
             type: 'input',
-            message: 'what is the description of your application?',
-            name: 'description',
+            message: 'please enter your email.',
+            name: 'email',
           },
 
           

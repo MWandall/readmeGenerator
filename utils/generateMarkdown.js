@@ -14,7 +14,57 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ![Static Badge](https://img.shields.io/badge/license-${data.license}-green)
+
+
+  ##Description
+
+  - ${data.description}
+
+  ## Table of Contents
+  
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
+## Installation
+
+${data.installation}
+
+## Usage
+
+${data.usage}
+
+Include screenshots as needed.
+
+To add a screenshot, create an 'assets/images' folder in your repository and upload your screenshot to it.
+
+## Credits
+
+List your collaborators, if any, with links to their GitHub profiles.
+
+If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+
+If you followed tutorials, include links to those here as well.
+
+## License
+
+${data.license}
+
+## How to Contribute
+
+${data.contributing}
+
+For any further questions please contact [${data.username}](https://github.com/${data.username}) at [${data.email}](mailto:${data.email})
+
+## Tests
+
+${data.test}
+
+
 `;
 }
 
 module.exports = generateMarkdown;
+

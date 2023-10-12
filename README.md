@@ -1,5 +1,6 @@
 # readmeGenerator
 # <Your-Project-Title>
+![Static Badge](https://img.shields.io/badge/license-MIT-green)
 
 ## Description
 
