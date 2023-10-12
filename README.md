@@ -1,6 +1,6 @@
 # readmeGenerator
 # <Your-Project-Title>
-![Static Badge](https://img.shields.io/badge/license-MIT-green)
+
 
 ## Description
 
@@ -44,6 +44,7 @@ If you followed tutorials, include links to those here as well.
 
 ## License
 
+![Static Badge](https://img.shields.io/badge/license-MIT-green)
 The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
 
 ---

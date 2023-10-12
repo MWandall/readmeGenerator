@@ -3,61 +3,58 @@ const inquirer = require('inquirer');
 const fs = require('fs');  //*fs for writeFile later
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
-inquirer
-.prompt(questions)
-.then
+
 
 // TODO: Create an array of questions for user input
 const questions = [
     {
             type: 'input',
-            message: 'what is the title of your application?',
+            message: 'What is the title of your application?',
             name: 'title',
           },
           {
             type: 'input',
-            message: 'what is the description of your application?',
+            message: 'What is the description of your application?',
             name: 'description',
           },
           {
             type: 'input',
-            message: 'what are the installation instructions?',
+            message: 'What are the installation instructions?',
             name: 'installation',
           },
           {
             type: 'input',
-            message: 'what is the usage information of your application?',
+            message: 'What is the usage information of your application?',
             name: 'usage',
           },
           {
             type: 'input',
-            message: 'what are the guidelines for contributing to this application? ',
+            message: 'What are the guidelines for contributing to this application? ',
             name: 'contributing',
           },
           {
             type: 'input',
-            message: 'what are the test instructions?',
+            message: 'What are the test instructions?',
             name: 'test',
           },
           {
             type: 'list',
-            message: 'what license are you using?',
+            message: 'What license are you using?',
             name: 'license',
             choices: ['Apache license 2.0', 'MIT', 'Creative Commons', 'BSD']
           },
           {
             type: 'input',
-            message: 'please enter your github username.',
+            message: 'Please enter your github username.',
             name: 'username',
           },
           {
             type: 'input',
-            message: 'please enter your email.',
+            message: 'Please enter your email.',
             name: 'email',
-          },
-
-          
+          },        
 ];
+
 // what is the title of your application? //*type: 'input'
 // what is the description of your application? //*type: 'input'
 // what are the installation instructions? //*type: 'input'
@@ -69,19 +66,29 @@ const questions = [
 // //*https://github.com/`${username}` so username can turn into link to github
 // please enter your email. //*type: 'input'
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
+inquirer
+.prompt(questions)
+.then((answers) => {
+    const readmeContent = generateMarkdown(answers);
 
-// Function call to initialize app
-init();
+    fs.writeFile('./utils/readme.md', readmeContent, (err) =>
+      err ? console.log(err) : console.log('Successfully created readme.md!')
+    );
+  });
 
 
 
 
 
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) {}
+
+// // TODO: Create a function to initialize app
+// function init() {}
+
+// // Function call to initialize app
+// init();
 
 //README.md is generated
 // with the title of my project
@@ -97,22 +104,3 @@ init();
 // license added
 // badge for that license added near top of 
 // username and email under questions section
-
-
-
-
-// {
-//     type: 'input',
-//     message: 'What is your user name?',
-//     name: 'username',
-//   },
-//   {
-//     type: 'password',
-//     message: 'What is your password?',
-//     name: 'password',
-//   },
-//   {
-//     type: 'password',
-//     message: 'Re-enter password to confirm:',
-//     name: 'confirm',
-//   },
