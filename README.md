@@ -26,11 +26,12 @@ Install inquirer and ensure JS files are linked with 'require'.
 
 To run, open index.js in integrated terminal in VS code and run 'node index.js' to initialize prompt.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+[Video link](https://drive.google.com/file/d/1Cd3S7E7a8IKgk051jQCkznvH-SEw4af2/view)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+Example of terminal code:
+---
+![terminal screenshot](<img/Screenshot 2023-10-13 174645.png>)
+---
 
 ## Credits
 
