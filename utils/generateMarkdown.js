@@ -48,9 +48,12 @@ If you used any third-party assets that require attribution, list the creators w
 
 If you followed tutorials, include links to those here as well.
 
+
 ## License
 
 ${data.license}
+
+For more information please see [info](https://choosealicense.com/licenses/${data.license}/)
 
 ## How to Contribute
 
@@ -70,3 +73,4 @@ For any further questions please contact [${data.username}](https://github.com/$
 
 module.exports = generateMarkdown;
 
+// tHEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
