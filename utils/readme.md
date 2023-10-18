@@ -1,11 +1,11 @@
-# TITLE
+# svgLogoMaker
 
   ![Static Badge](https://img.shields.io/badge/license-mit-green)
 
 
   ## Description
 
-  - Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem rem consequatur delectus, omnis quae commodi laborum blanditiis voluptatibus repudiandae porro ex, nisi nam! Officia illum velit itaque esse dignissimos.
+  - This application dynamically creates an SVG logo based on user input. This project was built to quickly create a customizable logo and save it to a new file.  I learned the benifits of modularization and test driven development to handle bugs before they happen.
 
   ## Table of Contents
   
@@ -16,11 +16,11 @@
 
 ## Installation
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem rem consequatur delectus, omnis quae commodi laborum blanditiis voluptatibus repudiandae porro ex, nisi nam! Officia illum velit itaque esse dignissimos.
+nodejs is required as well as inquirer and jest for user input and testing.
 
 ## Usage
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem rem consequatur delectus, omnis quae commodi laborum blanditiis voluptatibus repudiandae porro ex, nisi nam! Officia illum velit itaque esse dignissimos.
+To run, open index.js in terminal and run 'node index.js' to initialize prompt.
 
 Include screenshots as needed.
 
@@ -43,12 +43,12 @@ For more information please see [info](https://choosealicense.com/licenses/mit/)
 
 ## How to Contribute
 
-feel free to use code. If you would like to contribute, please email me
+Feel free to use this code.
 
 
 ## Tests
 
-NA
+In intigrated terminal, run 'npm run test'. This utilizes jest to test the different logo options. 
 
 ## Questions
 
